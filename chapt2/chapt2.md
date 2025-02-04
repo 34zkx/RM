@@ -34,6 +34,8 @@
     message(STATUS ${rclcpp_LIBRARIES})#   库文件及rclcpp依赖库
     target_include_directories(ros2_cpp_node PUBLIC ${rclcpp_INCLUDE_DIRS})#头文件包含
     target_link_libraries(ros2_cpp_node ${rclcpp_LIBRARIES})#库文件链接
+###  c++头文件源配置
+    /opt/ros/humble/include/**
 ## 功能包组织py节点
 `ros2 pkg create 功能包名字--类型 ament_python --证书` #创建功能包
 
@@ -64,4 +66,25 @@
 与  
 'listener = my_python_pkg.listener:main'  
 中间用逗号隔开！！
+## c++功能包
+1.`ros2 pkg create --build-type ament_cmake --license Apache-2.0 demo_cpp_pkg`#构建功能包  
+
+2.在src中添加cpp节点文件
+
+3.编辑CMake **#加在find_package(ament_cmake REQUIRED)后**
+
+    find_package(rclcpp REQUIRED) #查找头文件和库文件
+    add_executable(cpp_node src/cpp_node.cpp)#添加可执行文件名与路径
+    ament_target_dependencies(cpp_node rclcpp)#包含依赖
+
+4.在pkg的上级目录构建`colcon build`
+
+5.环境变量`source install/setup.bash`
+
+6.拷贝可执行文件进lib 在CMakelist中加入
+
+    install(TARGETS cpp_node 
+    DESTINATION lib/${PROJECT_NAME})
+
+7.重新colcon build
 

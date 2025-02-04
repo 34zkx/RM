@@ -1,0 +1,6 @@
+Invoking command in '/home/zkx/RM/chapt2/build/demo_cpp_pkg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/zkx/RM/chapt2/demo_cpp_pkg -DCMAKE_INSTALL_PREFIX=/home/zkx/RM/chapt2/install/demo_cpp_pkg
+Invoked command in '/home/zkx/RM/chapt2/build/demo_cpp_pkg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/zkx/RM/chapt2/demo_cpp_pkg -DCMAKE_INSTALL_PREFIX=/home/zkx/RM/chapt2/install/demo_cpp_pkg
+Invoking command in '/home/zkx/RM/chapt2/build/demo_cpp_pkg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/zkx/RM/chapt2/build/demo_cpp_pkg -- -j16 -l16
+Invoked command in '/home/zkx/RM/chapt2/build/demo_cpp_pkg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/zkx/RM/chapt2/build/demo_cpp_pkg -- -j16 -l16
+Invoking command in '/home/zkx/RM/chapt2/build/demo_cpp_pkg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/zkx/RM/chapt2/build/demo_cpp_pkg
+Invoked command in '/home/zkx/RM/chapt2/build/demo_cpp_pkg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/zkx/RM/chapt2/build/demo_cpp_pkg
