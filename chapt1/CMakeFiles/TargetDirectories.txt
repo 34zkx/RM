@@ -1,0 +1,3 @@
+/home/zkx/RM/chapt1/CMakeFiles/learn_cmake.dir
+/home/zkx/RM/chapt1/CMakeFiles/edit_cache.dir
+/home/zkx/RM/chapt1/CMakeFiles/rebuild_cache.dir
